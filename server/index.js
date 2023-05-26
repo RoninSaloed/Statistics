@@ -1,10 +1,13 @@
 require("dotenv").config()
 const express = require("express")
+const cheerio = require('cheerio');
+const axios = require('axios');
 const cors = require("cors")
 const cookieParser = require("cookie-parser")
 const mongoose = require("mongoose")
 const router = require("./router/index")
 const errorMidleware = require("./middlewares/error-middleware")
+const urlRozetka = 'https://rozetka.com.ua/notebooks/c80004/';
 
 const PORT = process.env.PORT || 5000
 const app = express()
@@ -32,3 +35,24 @@ const start = async () => {
 }
 
 start()
+axios.get(urlRozetka)
+    .then(response => {
+        const $ = cheerio.load(response.data);
+
+        const products = [];
+
+        $('.goods-tile__inner').slice(0, 10).each(function () {
+            const title = $(this).find('.goods-tile__title').text().trim();
+            const price = $(this).find('.goods-tile__price-value').text().trim();
+
+            products.push({ title, price });
+        });
+        app.get("/getData", (req, res) => {
+            res.send(products)
+        })
+        console.log(products);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+app.use(cors())

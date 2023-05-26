@@ -21,7 +21,7 @@ export default class Store {
     setLoading(bool: boolean) {
         this.isLoading = bool
     }
-    async login(email: string, password: string) {
+    async login(email: string, password: string, errorCallback?: (error: string) => void) {
         try {
             const response = await AuthService.login(email, password)
             console.log(response)
@@ -29,10 +29,14 @@ export default class Store {
             this.setAuth(true)
             this.setUser(response.data.user)
         } catch (e: any) {
-            console.log(e.response?.data?.message)
+            const errorMessage = e.response?.data?.message || 'An error occurred';
+            console.log(errorMessage);
+            if (errorCallback) {
+                errorCallback(errorMessage);
+            }
         }
     }
-    async registration(email: string, password: string) {
+    async registration(email: string, password: string, errorCallback?: (error: string) => void) {
         try {
             const response = await AuthService.registration(email, password)
             console.log(response)
@@ -41,7 +45,11 @@ export default class Store {
             this.setAuth(true)
             this.setUser(response.data.user)
         } catch (e: any) {
-            console.log(e.response?.data?.message)
+            const errorMessage = e.response?.data?.message || 'An error occurred';
+            console.log(errorMessage);
+            if (errorCallback) {
+                errorCallback(errorMessage);
+            }
         }
     }
     async logout() {

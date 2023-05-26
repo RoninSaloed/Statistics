@@ -1,0 +1,115 @@
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131A26;
+    width: 100%;
+    height: 100vh;
+}
+.loginBody{
+    box-sizing: border-box;
+
+    width: 654px;
+    height: 547px;
+
+    background: #161F2D;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginInputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.loginInputs input{
+    width: 405px;
+    height: 64px;
+    background: #131A26;
+    border: 3px solid #43B02A;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 0 0 30px;
+    margin: 0 0 50px 0;
+}
+.loginInputs input{
+    outline: none;
+    background: #131A26;
+    border: 3px solid #3bcf19;
+}
+
+.loginEmailError{
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    color: #ff073a;
+
+}
+.loginInputError{
+    position: relative;
+    border: 3px solid #ff073a;
+}
+
+.loginPasswordError{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    color: #ff073a;
+}
+label{
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+margin: 0 0 12px 0;
+}
+.loginButtons{
+    position: relative;
+    background-color: #131A26;
+    width: 405px;
+    height: 65px;
+    border: 3px solid #3bcf19;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.loginButtons button{
+    width: 100%;
+    background-color: #131A26;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+
+    color: #FFFFFF;
+}
+.loginButtons button:hover{
+    background-color: #3bcf19;
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+.loginButtons button:disabled:hover{
+  
+    background-color: #131A26;
+  
+}
+.loginCheckUser{
+    position: absolute;
+    top: 70px;
+    left:50px;
+    color: #ff073a;
+    text-align: center;
+}

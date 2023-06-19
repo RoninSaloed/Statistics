@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser")
 const mongoose = require("mongoose")
 const router = require("./router/index")
 const errorMidleware = require("./middlewares/error-middleware")
-const urlRozetka = 'https://rozetka.com.ua/notebooks/c80004/';
+const urlRozetka = 'https://rozetka.com.ua/notebooks/c80004/producer=asus;series=tuf-gaming/';
 
 const PORT = process.env.PORT || 5000
 const app = express()
@@ -35,6 +35,8 @@ const start = async () => {
 }
 
 start()
+
+
 axios.get(urlRozetka)
     .then(response => {
         const $ = cheerio.load(response.data);
@@ -55,4 +57,28 @@ axios.get(urlRozetka)
     .catch(error => {
         console.log(error);
     });
+
+
+
+axios.get('https://www.foxtrot.com.ua/ru/shop/noutbuki_asus-tuf.html')
+    .then(response => {
+        const $ = cheerio.load(response.data);
+
+        const products = [];
+
+        $('.card ').slice(0, 9).each(function () {
+            const title = $(this).find('.card__title').text().trim();
+            const price = $(this).find('.card-price').text().trim();
+
+            products.push({ title, price });
+        });
+        app.get("/getDataFoxtrot", (req, res) => {
+            res.send(products)
+        })
+        console.log(products);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+
 app.use(cors())

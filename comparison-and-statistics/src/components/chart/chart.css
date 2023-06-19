@@ -1,0 +1,38 @@
+.Chart{
+    margin:  0 0 100px 0;
+}
+.chartText{
+text-align: center;
+margin: 50px 0 100px 0;
+}
+.chartTitle{
+
+}
+.chartSubtitle{
+
+}
+.chartBody{
+    width: 700px;
+}
+.chartItems{
+    display: flex;
+    justify-content: space-around;
+}
+.chartImage{
+    background-image: url("./laptop.jpg");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 320px;
+    background-size: 500px 320px;
+    margin: 0 auto;
+}
+.chartName{
+    text-align: center;
+    margin: 20px 0 0 0;
+    letter-spacing: 1.3px;
+}
+.chartCharacterisctics ul li{
+    list-style: none;
+    font-size: 13px;
+    max-width: 500px;
+}

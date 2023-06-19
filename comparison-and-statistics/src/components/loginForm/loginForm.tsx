@@ -1,8 +1,8 @@
 import React, { FC, HtmlHTMLAttributes, useContext, useEffect, useState } from "react"
-import { Context } from ".."
+import { Context } from "../.."
 import { observer } from "mobx-react-lite"
 import './loginForm.css';
-import Store from "../store/store"
+import Store from "../../store/store"
 
 const LoginForm: FC = () => {
 

@@ -1,0 +1,126 @@
+.Preview{
+margin: 150px 0 0 0;
+}
+.previewBody{
+display: flex;
+justify-content: space-between;
+margin:  85px 0 0 0;
+padding: 0 85px;
+}
+.previewText{
+
+}
+.previewTitle{
+    color: #FFFFFF;
+    font-size: 43px;
+    max-width: 500px;
+}
+.previewGreen{
+    color:#43B02A;
+}
+.previewSubtitle{
+    margin: 25px 0 0 0;
+    font-size: 20px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+.previewItems{
+display: flex;
+
+font-size: 15.5px;
+margin: 150px 0 0 0;
+color: #FFFFFF;
+}
+.previewStats{
+    background-image: url(./icons/graph\ 1.svg);
+    background-repeat: no-repeat;
+    width: 42.5px;
+    height: 45px;
+    background-size: 100%;
+} 
+
+.previewSearch{
+    margin: 0 auto;
+    background-image: url(./icons/analyse\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 45px;
+    background-size: 70%;
+}
+.previewData{
+    background-image: url(./icons/file\ 1.svg);
+    background-repeat: no-repeat;
+    width: 42.5px;
+    height: 45px;
+    background-size: 100%;
+
+}
+.previewIconContent{
+    margin: 0 50px 0 0;
+}
+.previewIconContent div{
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.previewLogo{
+    position: relative;
+    width: 354.5px;
+    height: 354.5px;
+    border-radius: 50%;
+    background: #161F2D;
+}
+
+.previewProm{
+    position: absolute;
+    background-image: url(./prom\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 100px;
+    height: 100px;
+    top:50px;
+
+}
+.previewEldorado{
+    position: absolute;
+
+    background-image: url(./Eldorado\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
+    top: 60px;
+    left: 150px;
+}
+.previewComfy{
+    position: absolute;
+
+    background-image: url(./comfy.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
+    top: 50%;
+    right: 80%;
+}
+.previewRozetka{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    background-image: url(./rozetka.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+}
+.previewGraph{
+    position: absolute;
+    border-radius: 30px;
+    background-image: url(./Graph.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    width: 350px;
+    height: 100px;
+    top: 75%;
+}

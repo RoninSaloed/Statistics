@@ -1,0 +1,126 @@
+.Rate{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rateItems{
+}
+.rateTitle{
+font-size: 43px;
+text-align: center;
+color: #fff;
+}
+.rateSubtitle{
+    color: #43B02A;
+    font-size: 36px;
+margin: 0 0 50px 0;
+max-width: 800px;
+}
+.rateStatic li div:first-child{
+    width: 100px;
+    height: 10px;
+    background: #161F2D;
+    border-radius: 30px;
+}
+
+.rateStatic li{
+list-style: none;
+margin: 0 20px 0 0;
+font-size: 20px;
+letter-spacing: 1.2px;
+}
+.rateBody{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 10px 0;
+}
+.rateRozetka{
+    background: #161F2D;
+border-radius: 30px;
+width: 200px;
+height: 10px;
+margin: 4px 0 0 0;
+
+}
+.rateRozetka div{
+    background: #47B22F;
+    border-radius: 30px;
+    width: 170px;
+    height: 10px;
+}
+.rateEldorado{
+    background: #161F2D;
+border-radius: 30px;
+width: 200px;
+height: 10px;
+margin: 4px 0 0 0;
+
+}
+.rateEldorado div{
+    background: #FF0000;
+    border-radius: 30px;
+    width: 110px;
+    height: 10px;
+}
+.rateProm{
+    background: #161F2D;
+border-radius: 30px;
+width: 200px;
+height: 10px;
+margin: 4px 0 0 0;
+
+}
+.rateProm div{
+    background: #692F91;
+    border-radius: 30px;
+    width: 130px;
+    height: 10px;
+}
+.rateFoxtrot{
+    background: #161F2D;
+border-radius: 30px;
+width: 200px;
+height: 10px;
+margin: 4px 0 0 0;
+
+}
+.rateFoxtrot div{
+    background: #FF671F;
+    border-radius: 30px;
+    width: 70px;
+    height: 10px;
+}
+.rateComfi{
+    background: #161F2D;
+border-radius: 30px;
+width: 200px;
+height: 10px;
+margin: 4px 0 0 0;
+
+}
+.rateComfi div{
+    background: #C5C5C5;
+    border-radius: 30px;
+    width: 145px;
+    height: 10px;
+}
+
+.rateStatic .rateBody:first-child{
+color: #47B22F;
+}
+.rateStatic .rateBody:nth-child(2){
+    color: #FF0000;
+}
+.rateStatic .rateBody:nth-child(3){
+    color: #692F91;
+}
+.rateStatic .rateBody:nth-child(4){
+    color: #FF671F;
+}
+.rateStatic .rateBody:last-child{
+    color: #C5C5C5;
+}

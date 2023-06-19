@@ -5,6 +5,7 @@
     background-color: #131A26;
     width: 100%;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 .loginBody{
     box-sizing: border-box;
@@ -26,7 +27,7 @@
 }
 .loginInputs input{
     width: 405px;
-    height: 64px;
+    height: 63px;
     background: #131A26;
     border: 3px solid #43B02A;
     border-radius: 30px;
